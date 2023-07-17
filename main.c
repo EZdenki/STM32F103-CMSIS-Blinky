@@ -15,7 +15,7 @@ int
 main( void )
 {
 
-  // Setup GPIO port C, pin 13 (C13), as a push-pull output. C13 controlls the built-in LED
+  // Setup GPIO port C, pin 13 (C13), as a push-pull output. C13 controls the built-in LED
   // on the Blue Pill
 
   // Enable GPIO Port C
@@ -29,7 +29,7 @@ main( void )
 
   while( 1 )                            // Endless loop
   {
-    for( uint32_t x=0; x<100e3; x++) ;  // Delay a bit
+    for( uint32_t x=0; x<200e3; x++) ;  // Delay a bit
     GPIOC->ODR ^= GPIO_ODR_ODR13;       // Flip the GPIO C13 bit
   }
 }

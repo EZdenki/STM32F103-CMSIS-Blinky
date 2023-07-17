@@ -39,5 +39,3 @@ $(SOURCE).o: $(SOURCE).c Makefile
 
 clean:
 	del *.o *.elf *.map *.su
-
-
